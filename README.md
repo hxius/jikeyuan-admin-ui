@@ -11,6 +11,7 @@
  - css sass/scss
  - 代码格式规范 ESlint + Prettier
  - 代码提交规范 Commitizen + GitHooks(husky+commitlint)
+   - commitizen、cz-customizable
 ## 功能列表
  - 登录、退出
  - 首页
