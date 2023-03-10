@@ -44,7 +44,18 @@ CLS (Cumulative Layout Shift) :累计布局偏移，得分范围0-1，指的是�
 FCP(First Contentful Paint)首次内容绘制。标记浏览器渲染来自 DOM 第一位内容的时间点，内容可能是文本、图像等元素。
 TTFB (Time to First Byte) 首字节到达的时间点。
 
+## 问题记录
 
+```Shell
+ $ pnpm add react-router-dom
+ // 异常
+  Peer dependencies that should be installed:
+    @babel/core@">=7.11.0 <8.0.0"
+    @babel/plugin-transform-react-jsx@^7.14.9
+    typescript@">=3.2.1 <4.0.0 || >=4.0.0 <5.0.0"
+    @babel/plugin-syntax-flow@^7.14.5
+    @testing-library/dom@>=7.21.4
+```
 
 
 

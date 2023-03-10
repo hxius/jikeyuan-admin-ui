@@ -1,22 +1,19 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Layout from '@/pages/Layout'
 
 function App() {
-  const oje = {
-    a: 1,
-    b: 2,
-    c: 3
-  }
-  const func = () => {
-    return oje
-  }
-  func()
+  // 路由配置
   return (
-    <div className="App">
-      <span>2233</span>
-      <h2 className="122" title="233" id="dd" style={{ color: 'red' }}>
-        oooo
-      </h2>
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Layout />}></Route>
+          <Route path="/login" element={<Layout />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
